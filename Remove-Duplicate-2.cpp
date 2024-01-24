@@ -1,15 +1,13 @@
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-         int i =0;
-        for(auto ele : nums)
-        {
-            if(i==0 || i==1 || nums[i-2] != ele)
-            {
-                nums[i] = ele;
+        int i = 0;
+        for (auto element : nums) {
+            if (i == 0 || i == 1 || nums[i - 2] != element) {
+                nums[i] = element;
                 i++;
             }
         }
-    return i ;
+        return i;
     }
 };
