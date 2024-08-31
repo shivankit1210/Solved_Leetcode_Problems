@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Admin/Documents/Leetcode-Problems",
-      "program": "c:/Users/Admin/Documents/Leetcode-Problems/build/Debug/outDebug",
+      "cwd": "c:/Users/Admin/Documents/Leetcode-Problems/PreviousQuestion",
+      "program": "c:/Users/Admin/Documents/Leetcode-Problems/PreviousQuestion/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
