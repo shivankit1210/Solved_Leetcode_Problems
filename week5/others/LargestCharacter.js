@@ -10,7 +10,7 @@ function find(str){
 
 
 
-let str="i am pro javascript developer"
+let str="i am prosdnfjdsbas javascript developer"
 let res=find(str)
 console.log(res)
 
