@@ -1,58 +1,24 @@
+class Solution {
+public:
+    bool isValid(string s) {
+        char ch;
+        vector<char> stack;
+        for (int i = 0; i < s.length(); i++) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// class Solution {
-// public:
-//     bool isValid(string s) {
-//         int n=s.length();
-
-//         std::stack<char>  mystack;
-//         for(int i=0;i<n;i++){
-//          if(s[i]== "(" || "{" || "["){
-//             mystack.push();
-//             char ch=  s[i];
-//          }
-//           else if(s[i]== ")" || "}" || "]"){
-
-//             if(s[i]==")"){
-//                 if(mystack.top()=="("){
-//                     return true;
-//                 }
-//             }
-
-//            else  if(s[i]=="}"){
-//                 if(mystack.top()=="}"){
-//                     return true;
-//                 }
-//             }
-
-//            else  if(s[i]=="]"){
-//                 if(mystack.top()=="["){
-//                     return true;
-//                 }
-//             }
-//           }
-//                  }
-//  }
-        
-         
-//     }
-// };
+            if (s[i] == '(' || s[i] == '[' || s[i] == '{') {
+                stack.push_back(s[i]);
+            }
+            else if (s[i] == ')' || s[i] == ']' || s[i] == '}') {
+                if(stack.empty()) return false;
+                if ((s[i] == ')' && stack.back() == '(') || (s[i] == ']' && stack.back() == '[') || (s[i] == '}' && stack.back() == '{') ) {
+                stack.pop_back();
+                } 
+                else {
+                    return false;
+                }
+                
+            }
+        }
+        return stack.empty();
+    }
+};
