@@ -16,4 +16,5 @@ function Largest(arr,n) {
 const arr = [23, 3, 35, 17, 4, 23, 5, 43, 553, 3, 231, 9];
 let n = arr.length;
 res = Largest(arr,n);
-console.log(res[n-1]);
+console.log(res);
+// console.log(res[n-1]);
