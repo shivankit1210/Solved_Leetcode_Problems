@@ -21,6 +21,6 @@ function sorting(res) {
 
 const arr = [2, 5, [14, [3, 31]], [22, 9], 6, [21, 45, 32]];
 const res = arr.flat(Infinity);
-// console.log(res);
+console.log(res);
 const Final = sorting(res);
 console.log(Final)                                                                       
