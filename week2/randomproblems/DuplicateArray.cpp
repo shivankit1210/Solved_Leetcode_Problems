@@ -9,7 +9,7 @@ int FindDuplicate(int arr[],int n){
       }
     }
     arr[j++]=arr[n-1];
-    return j
+    return j;
 }
 
 

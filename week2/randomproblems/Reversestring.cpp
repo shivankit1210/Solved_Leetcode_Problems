@@ -15,7 +15,7 @@ char* reverseString(char str[20])
 
 int main()
 {
-char str[20] = "tihsrah ayituc";
+char str[20] = "shivankit agarwal";
 char* res=reverseString(str);
 std::cout<<res;
     return 0;
