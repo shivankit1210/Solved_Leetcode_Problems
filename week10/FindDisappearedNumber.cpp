@@ -7,7 +7,9 @@ public:
         for (int i = 0; i < nums.size(); i++) {
             int index = abs(nums[i]) - 1;  // Calculate the index based on the value
             if (nums[index] > 0) {
-                nums[index] = -nums[index];  // Mark as visited by making it negative
+         
+         
+               nums[index] = -nums[index];  // Mark as visited by making it negative
             }
         }
         
@@ -21,6 +23,7 @@ public:
         return ans;
     }
 };
+
 
 
 
