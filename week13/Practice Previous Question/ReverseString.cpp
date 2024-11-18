@@ -21,7 +21,10 @@ char* reverseString(char str[20]){
 }
 
 int main(){
-    char str[20]="i am shivankit";
+    char str[20];
+    cout<<"enter lines of string";
+    cin.getline(str,20);
+
     char* res=reverseString(str);
     cout<<"reverse String is"<<res;
 
