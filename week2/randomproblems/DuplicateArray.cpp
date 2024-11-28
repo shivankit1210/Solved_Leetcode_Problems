@@ -14,9 +14,10 @@ int FindDuplicate(int arr[],int n){
 
 
 int main(){
-int arr[]={1, 2, 2, 3, 4, 4, 5,6,7,7,7,8,9,10,12,};
+int arr[]={1, 2, 2, 3, 4, 4, 5,6,7,7,7,8,9,10,12};
 int n=sizeof(arr)/sizeof(arr[0]);
 n=FindDuplicate(arr,n);
+cout<<n;
 
 
     return 0;
